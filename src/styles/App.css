@@ -1,0 +1,139 @@
+/* Global styles (body, app, top-section, etc.) */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  height: 100vh; /* Ensures body spans the entire viewport */
+}
+
+.App {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Top Section */
+.top-section {
+  flex: auto; /* Allow it to grow based on content */
+  background-color: #222;
+  position: relative;
+  overflow: hidden; /* Hides any overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevent black space */
+}
+
+/* Footer Section */
+.footer-Media {
+  flex: 1;
+  background-color: #0d0d0d;
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  align-items: flex-end;
+  padding-bottom: 1.3%;
+}
+
+.footer-1 > p:first-child {
+  font-size: 45px;
+  color: rgba(255, 255, 255, 0.853);
+  text-align: right;
+  font-weight: 10;
+  margin: 0px !important;
+  text-transform: uppercase;
+  padding-right: 3%;
+}
+
+.footer-1 > p:first-child > span {
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.footer-1 > img {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  left: 10%;
+  align-self: flex-start;
+}
+
+.footer-1 > .quote {
+  font-size: 25.5px;
+  font-weight: 400;
+  margin: 0;
+  text-align: right;
+  padding-right: 3%;
+  color: #ffffff98;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  /* For tablets and smaller devices */
+  .top-section {
+    height: 50vh;
+  }
+  .top-section > img {
+    object-fit: contain; /* Keep the image fitting properly without black space */
+  }
+
+  .footer-1 {
+    padding-top: 5%;
+    align-items: center;
+  }
+
+  .footer-1 > p:first-child {
+    font-size: 24px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .footer-1 > p:first-child > span {
+    font-size: 28px;
+  }
+
+  .footer-1 > img {
+    width: 50%;
+    height: auto;
+    left: 0;
+    align-self: center; /* Center image on mobile */
+  }
+
+  .footer-1 > .quote {
+    font-size: 18px; /* Smaller font size for quote */
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For small phones */
+  .footer-1 > p:first-child {
+    font-size: 18px;
+  }
+
+  .footer-1 > p:first-child > span {
+    font-size: 22px;
+  }
+
+  .footer-1 > img {
+    width: 60%;
+  }
+
+  .footer-1 > .quote {
+    font-size: 14px;
+  }
+}

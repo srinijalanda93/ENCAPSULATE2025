@@ -1,0 +1,18 @@
+.timerDiv {
+  width: 20%;
+  height: 10%;
+  background-color: #616125;
+  border-radius: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 3%;
+  margin-left: 61vw;
+  box-sizing: border-box !important;
+}
+
+span {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 700;
+}

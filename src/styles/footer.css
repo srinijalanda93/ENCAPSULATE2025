@@ -1,0 +1,45 @@
+.SocialMedia {
+  padding-right: 3%;
+  color: #dbdbdbf0;
+  font-size: 1.7rem; /* Default size for larger screens */
+  text-align: right; /* Align text to the right for larger screens */
+}
+
+.SocialMedia ul {
+  list-style: none !important;
+  display: flex;
+  gap: 10px; /* Add spacing between icons */
+  margin-block-end: 0.6%;
+  justify-content: flex-end; /* Align icons to the right */
+  padding-inline-start: 0; /* Reset default padding */
+}
+
+.SocialMedia li {
+  display: inline-block;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .SocialMedia {
+    font-size: 1.2rem; /* Scale down text size */
+    text-align: center; /* Center text for smaller screens */
+    padding-right: 0; /* Remove right padding */
+  }
+
+  .SocialMedia ul {
+    justify-content: center; /*center align icons */
+    gap: 8px; /*reduce spacing between icons */
+  }
+}
+
+@media (max-width: 576px) {
+  /* For small phones */
+  .SocialMedia {
+    font-size: 1.2rem; /*further scale down text size */
+  }
+
+  .SocialMedia ul {
+    gap: 5px; /*compact spacing between icons */
+  }
+}
